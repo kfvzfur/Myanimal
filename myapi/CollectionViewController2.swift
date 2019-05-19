@@ -23,8 +23,6 @@ class CollectionViewController2: UICollectionViewController{
         super.viewDidLoad()
         //.headerReferenceSize =
         //outley2.headerReferenceSize = self.UISearchController
-       
-        
         //outley2.header = self.searchController.searchBar
         outley2.sectionInset = UIEdgeInsets(top: 10, left: 5, bottom: 5, right: 5)
         //用得到得手機大小來設置cell的大小
