@@ -12,6 +12,12 @@
 		4EFBF42B228E86A6008061A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EFBF429228E86A6008061A0 /* Main.storyboard */; };
 		4EFBF42D228E86A8008061A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFBF42C228E86A8008061A0 /* Assets.xcassets */; };
 		4EFBF430228E86A8008061A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EFBF42E228E86A8008061A0 /* LaunchScreen.storyboard */; };
+		4EFBF43A228E9971008061A0 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF439228E9971008061A0 /* Animal.swift */; };
+		4EFBF43E228FBDE2008061A0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF43D228FBDE2008061A0 /* CollectionViewController.swift */; };
+		4EFBF440228FBE00008061A0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF43F228FBE00008061A0 /* CollectionViewCell.swift */; };
+		4EFBF442228FEB4E008061A0 /* 大圖.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EFBF441228FEB4E008061A0 /* 大圖.png */; };
+		4EFBF444229060C4008061A0 /* ViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF443229060C4008061A0 /* ViewCell2.swift */; };
+		4EFBF446229060EA008061A0 /* CollectionViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFBF445229060EA008061A0 /* CollectionViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		4EFBF42C228E86A8008061A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EFBF42F228E86A8008061A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EFBF431228E86A8008061A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EFBF439228E9971008061A0 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		4EFBF43D228FBDE2008061A0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		4EFBF43F228FBE00008061A0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		4EFBF441228FEB4E008061A0 /* 大圖.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大圖.png"; sourceTree = "<group>"; };
+		4EFBF443229060C4008061A0 /* ViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCell2.swift; sourceTree = "<group>"; };
+		4EFBF445229060EA008061A0 /* CollectionViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +66,15 @@
 		4EFBF424228E86A6008061A0 /* myapi */ = {
 			isa = PBXGroup;
 			children = (
+				4EFBF441228FEB4E008061A0 /* 大圖.png */,
 				4EFBF425228E86A6008061A0 /* AppDelegate.swift */,
 				4EFBF427228E86A6008061A0 /* ViewController.swift */,
+				4EFBF439228E9971008061A0 /* Animal.swift */,
 				4EFBF429228E86A6008061A0 /* Main.storyboard */,
+				4EFBF443229060C4008061A0 /* ViewCell2.swift */,
+				4EFBF445229060EA008061A0 /* CollectionViewController2.swift */,
+				4EFBF43F228FBE00008061A0 /* CollectionViewCell.swift */,
+				4EFBF43D228FBDE2008061A0 /* CollectionViewController.swift */,
 				4EFBF42C228E86A8008061A0 /* Assets.xcassets */,
 				4EFBF42E228E86A8008061A0 /* LaunchScreen.storyboard */,
 				4EFBF431228E86A8008061A0 /* Info.plist */,
@@ -124,6 +142,7 @@
 			files = (
 				4EFBF430228E86A8008061A0 /* LaunchScreen.storyboard in Resources */,
 				4EFBF42D228E86A8008061A0 /* Assets.xcassets in Resources */,
+				4EFBF442228FEB4E008061A0 /* 大圖.png in Resources */,
 				4EFBF42B228E86A6008061A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFBF440228FBE00008061A0 /* CollectionViewCell.swift in Sources */,
+				4EFBF43E228FBDE2008061A0 /* CollectionViewController.swift in Sources */,
 				4EFBF428228E86A6008061A0 /* ViewController.swift in Sources */,
+				4EFBF43A228E9971008061A0 /* Animal.swift in Sources */,
 				4EFBF426228E86A6008061A0 /* AppDelegate.swift in Sources */,
+				4EFBF446229060EA008061A0 /* CollectionViewController2.swift in Sources */,
+				4EFBF444229060C4008061A0 /* ViewCell2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
