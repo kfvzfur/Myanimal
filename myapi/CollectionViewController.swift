@@ -11,12 +11,18 @@ import UIKit
 private let reuseIdentifier = "mycell"
 
 class CollectionViewController: UICollectionViewController {
+    @IBOutlet weak var mysearch: UISearchBar!
     @IBOutlet weak var viewlayout: UICollectionViewFlowLayout!
+    var searchController: UISearchController!
     var cats = [Animal]()
     var cats2 = [Animal]()
 let fullScreenSize = UIScreen.main.bounds.size
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchController = UISearchController(searchResultsController:nil)
+        //tableView.tableHeaderView = searchController.searchBar
+         //collectionView
+    
         //調整上下左右的間距
         viewlayout.sectionInset = UIEdgeInsets(top: 15, left: 5, bottom: 5, right: 5)
         //用得到得手機大小來設置cell的大小
@@ -57,9 +63,14 @@ let fullScreenSize = UIScreen.main.bounds.size
             }
             cats2.append(j)
         }
-        
-       
+       //images.sort({ image1, image2 in return image1.fileID > image2.fileID })
+        //cats2.sort(by: {Animal,Animal in return Animal.album_file> Animal.album_file})
+        //用album_file排序將有照片的優先顯示
+        cats2.sort { (Animal1, Animal2) -> Bool in
+            Animal1.album_file! > Animal2.album_file!
+        }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       //collectionView.indexPathsForSelectedItems
        
@@ -102,10 +113,10 @@ let fullScreenSize = UIScreen.main.bounds.size
      
        
         // Configure  // Configure the cell...
-    
+        
        
         let cat = cats2[indexPath.row]
-       
+        cell.tag = indexPath.row
         cell.celllable.text = cat.animal_bodytype
     // cell.cellimage.image = UIImage(named: )
         // 抓圖
@@ -116,8 +127,10 @@ let fullScreenSize = UIScreen.main.bounds.size
         let task = URLSession.shared.dataTask(with: eq ?? ee!) { (data, response, error) in
             if let data = data {
                 DispatchQueue.main.async {
-                   
-                   cell.cellimage.image = UIImage(data: data)
+                    if cell.tag == indexPath.row{
+                        cell.cellimage.image = UIImage(data: data)
+                        
+                    }
                 }
               }
             

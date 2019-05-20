@@ -41,16 +41,11 @@ class CollectionViewController2: UICollectionViewController{
                     
                     if let animal = try? decoder.decode([Animal].self, from: data)
                     {
-                        
                         self.animals = animal
-                       
                         //找出動物種類來設cell數量
-                        for i in self.animals
-                        {
-                             self.allkind.insert(i.animal_kind)
-                          
+                        for i in self.animals{
+                          self.allkind.insert(i.animal_kind)
                         }
-                        
                         for i in self.allkind
                         {
                             self.allkinds.append(i)

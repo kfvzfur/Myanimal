@@ -17,7 +17,7 @@ struct Animal: Codable{
     var shelter_tel:String? //電話
     var cDate:String?//資料更新時間
     var animal_remark:String?
-    var album_file:String?  //URL(fileURLWithPath: "http://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fl77ly1f86j208c08cq36.jpg")
+   var album_file:String?  //URL(fileURLWithPath: "http://ws3.sinaimg.cn/bmiddle/9150e4e5ly1fl77ly1f86j208c08cq36.jpg")
    
 }
 
